@@ -2,107 +2,157 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ashish Panwar | Software Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="hero">
-        <nav>
-            <h2 class="logo">Protfo<span>lio</span></h2>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Servics</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="content">
-            <h4>Hello, My name is</h4>
+    <!-- Fixed Glassmorphism Navigation -->
+    <nav id="navbar">
+        <h2 class="logo">Portfo<span>lio</span></h2>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="content reveal">
+            <h4>Hello, my name is</h4>
             <h1>Ashish <span>Panwar</span></h1>
-            <h3>I'am a Web Developer.</h3>
-            <div class="newslatter">
+            <!-- Dynamic typing effect span -->
+            <h3>I am a <span class="typing-text"></span></h3>
+            <div class="newsletter">
                 <form>
-                    <input type="email" name="email" id="nail" placeholder="Enter Your Email">
-                    <input type="submit" name="submit" value="Lets Start">
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+                    <input type="submit" name="submit" value="Let's Start">
                 </form>
             </div>
         </div>
-    </div>
-    <!----About section start---->
-    <section class="about">
-    <div class="main">
-    <img src="p.png">
-    <div class="about-text">
-    <h2>About Me</h2>
-    <h5>Developer & Designer</h5>
-    <p>I am a front-end web developer. I can create best Website and pixel perfect design. 
-    I also make the website more & more interactive with web animations. I can provide 
-    clean code and pixel perfect design. A responsive design makes your website 
-    accessible to all users.</p> 
-    <button type="button">Let's Talk</button>
-    </div>
-    </div>
+    </header>
+
+    <!-- About section -->
+    <section class="about" id="about">
+        <div class="main reveal">
+            <div class="img-container">
+                <img src="p.png" alt="Ashish Panwar Profile Picture" class="profile-img">
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5>Software Engineer & Backend Developer</h5>
+                <p>I am an MCA candidate and aspiring Associate Software Engineer with hands-on experience building robust, scalable backend applications. I specialize in <strong>Java, Spring Boot, REST APIs, Hibernate/JPA,</strong> and <strong>MySQL</strong>. With a strong foundation in Object-Oriented Programming and Data Structures, I am passionate about writing clean code and solving complex problems.</p> 
+                
+                <div style="margin-bottom: 35px; color: #d1d1d1; font-size: 16px; line-height: 1.8;">
+                    <p><i class="fa-solid fa-graduation-cap" style="color: #f9004d; margin-right: 10px;"></i> <strong>MCA:</strong> Manipal University Jaipur (2025 - Present)</p>
+                    <p><i class="fa-solid fa-graduation-cap" style="color: #f9004d; margin-right: 10px;"></i> <strong>BCA:</strong> Graphic Era University (2022 - 2025)</p>
+                    <p><i class="fa-solid fa-certificate" style="color: #f9004d; margin-right: 10px;"></i> <strong>Certifications:</strong> Java Programming - IBM (Coursera)</p>
+                    <p><i class="fa-solid fa-trophy" style="color: #f9004d; margin-right: 10px;"></i> <strong>Achievements:</strong> Solved 100+ DSA problems on LeetCode</p>
+                </div>
+
+                <a href="#contact"><button type="button" class="glow-btn">Contact Me</button></a>
+            </div>
+        </div>
     </section>
-    <div class="service">
-    <div class="title">
-        <h2>Our Services</h2>
-    </div>
-    <div class="box">
-        <div class="card">
-            <i class="fa-solid fa-bars"></i>
-            <h5>Web Development</h5>
-            <div class="pra">
-                <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
-                <p style="text-align: center;">
-                    <a class="button" href="#">Read More</a>
-                </p>
+
+    <!-- Services / Skills Section -->
+    <section class="service" id="services">
+        <div class="title reveal">
+            <h2>Technical Skills</h2>
+        </div>
+        <div class="box">
+            <!-- Skill 1 -->
+            <div class="card reveal">
+                <i class="fa-solid fa-server"></i>
+                <h5>Backend Development</h5>
+                <div class="pra">
+                    <p>Building robust, scalable server-side applications and RESTful APIs using Java, Spring Boot, and Spring MVC.</p>
+                </div>
+            </div>
+            <!-- Skill 2 -->
+            <div class="card reveal" style="transition-delay: 0.2s;">
+                <i class="fa-solid fa-database"></i>
+                <h5>Database Management</h5>
+                <div class="pra">
+                    <p>Designing efficient relational databases, writing SQL queries, and managing data workflows using MySQL, Hibernate, and JPA.</p>
+                </div>
+            </div>
+            <!-- Skill 3 -->
+            <div class="card reveal" style="transition-delay: 0.4s;">
+                <i class="fa-solid fa-code"></i>
+                <h5>DSA & Core Concepts</h5>
+                <div class="pra">
+                    <p>Strong foundation in Object-Oriented Programming (OOP), Data Structures & Algorithms, and Exception Handling.</p>
+                </div>
             </div>
         </div>
+    </section>
 
-        
-        <div class="card">
-            <i class="fa-regular fa-user"></i>
-            <h5>Web Development</h5>
-            <div class="pra">
-                <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
-                <p style="text-align: center;">
-                    <a class="button" href="#">Read More</a>
-                </p>
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="title reveal">
+            <h2>Key Projects</h2>
+        </div>
+        <div class="project-grid">
+            <!-- Project 1 -->
+            <div class="project-card reveal">
+                <div class="project-img-wrapper">
+                    <img src="A.cng.jpg" alt="Electricity Billing System">
+                    <div class="img-overlay">
+                        <a href="https://github.com" target="_blank" class="view-btn"><i class="fa-solid fa-code-branch"></i> View Code</a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h4>Electricity Billing System</h4>
+                    <p style="margin-bottom: 15px;">A backend application managing customer registration, electricity billing, and payment tracking.</p>
+                    <p style="font-size: 14px; color: #f9004d; font-weight: bold;">Tech Stack: Java, Spring Boot, REST API, MySQL</p>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card reveal" style="transition-delay: 0.2s;">
+                <div class="project-img-wrapper">
+                    <img src="b.png.jpg" alt="Voting Poll Application">
+                    <div class="img-overlay">
+                        <a href="https://github.com" target="_blank" class="view-btn"><i class="fa-solid fa-code-branch"></i> View Code</a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h4>Voting Poll Application</h4>
+                    <p style="margin-bottom: 15px;">A REST-based platform for creating polls, casting votes, and securely managing poll results.</p>
+                    <p style="font-size: 14px; color: #f9004d; font-weight: bold;">Tech Stack: Java, Spring Boot, Hibernate/JPA, MySQL</p>
+                </div>
             </div>
         </div>
+    </section>
 
+    <!-- Contact CTA -->
+    <section class="contact-me reveal" id="contact">
+        <p>Looking for an Associate Software Engineer?</p>
+        <p style="color: #d1d1d1; font-size: 18px; margin-bottom: 30px;">
+            <i class="fa-solid fa-location-dot" style="margin-right: 5px;"></i> Uttarakhand, India &nbsp;|&nbsp; 
+            <i class="fa-solid fa-phone" style="margin-right: 5px;"></i> +91 9548346271
+        </p>
+        <a class="button-two glow-btn" href="mailto:panwarashu402@gmail.com">Email Me: panwarashu402@gmail.com</a>
+    </section>
 
-
-        
-        <div class="card">
-            <i class="fa-regular fa-bell"></i>
-            <h5>Web Development</h5>
-            <div class="pra">
-                <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
-                <p style="text-align: center;">
-                    <a class="button" href="#">Read More</a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="contact-me">
-        <p>Let Me Get You A Beautiful Website</p>
-        <a class="button-two" href="#">Hire Me</a>
-    </div>
+    <!-- Footer -->
     <footer>
-        <p>Ashsih Panwar</p>
-        <p>Contact Me</p>
+        <p>Ashish Panwar</p>
+        <p>Aspiring Associate Software Engineer building robust backend solutions.</p>
         <div class="social">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://leetcode.com" target="_blank" title="LeetCode"><i class="fa-solid fa-code"></i></a>
         </div>
-        <p class="end">CopyRight By Ashish Panwar</p>
+        <p class="end">Copyright © Ashish Panwar</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
